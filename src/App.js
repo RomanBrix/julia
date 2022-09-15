@@ -9,12 +9,14 @@ import Services from "./components/Services";
 function App() {
   return (
     <div className="App">
+
       <Intro/>
       <About/>
       <Services/>
       <Consult/>
       <Etaps/>
       <Deals/>
+      
     </div>
   );
 }
