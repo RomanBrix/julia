@@ -1,0 +1,65 @@
+.services {
+    .content {
+        h1 {
+            margin-bottom: 50px;
+        }
+        .cool-blocks {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .block {
+                min-width: 30%;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: flex-start;
+                max-width: 420px;
+                margin-right: 20px;
+                margin-bottom: 50px;
+                box-sizing: border-box;
+                border: 2px solid $tc;
+                padding: 40px 45px;
+                position: relative;
+                transition: 0.25s;
+                background: #fff;
+                // box-shadow: 5px 5px 14px 1px transparent;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid $mc;
+                    z-index: -1;
+                    // opacity: 0;
+                    // transform: rotate(3deg);
+                    transform: matrix(1, 0.07, -0.07, 1, 0, 0);
+                    transition: 0.25s;
+                }
+                &:hover {
+                    // box-shadow: 5px 5px 14px 1px rgba($color: $mc, $alpha: 0.2);
+                    &:after {
+                        // opacity: 1;
+                        transform: rotate(0deg);
+                        // opacity: 0.2;
+                    }
+                }
+                .head {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                }
+                .text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}

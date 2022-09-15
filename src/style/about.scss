@@ -1,0 +1,110 @@
+.about {
+    // position: relative;
+    .content {
+        display: flex;
+        align-items: justify;
+        justify-content: space-between;
+        position: relative;
+        .line {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transition: 0.25s;
+            * {
+                transition: 0.25s;
+            }
+            svg {
+                path {
+                    stroke-dasharray: 1600;
+                    stroke-dashoffset: 1600;
+                    stroke: $mc;
+                    transition-delay: 0.5s;
+                    transition-duration: 3s;
+                    // transition: 3s;
+                    // transition: stroke 6s;
+                }
+            }
+            &.drawLine {
+                path {
+                    stroke-dasharray: 1600;
+                    stroke-dashoffset: 0;
+
+                    stroke: $tc;
+                }
+            }
+        }
+        .left {
+            position: relative;
+            z-index: 1;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h1 {
+                margin: 0;
+            }
+            p {
+                max-width: 75%;
+                margin: 35px 0;
+            }
+        }
+
+        .right {
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+            padding: 25px;
+            width: 40%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.about-plus {
+    background: $tc;
+    box-sizing: border-box;
+    padding: 70px 0;
+    .content {
+        color: #fff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        box-sizing: border-box;
+        .block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            &:after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background: $mc;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+            .head {
+                font-size: 32px;
+                line-height: 39px;
+                box-sizing: border-box;
+                // padding-bottom: 15px;
+                // margin-bottom: 30px;
+            }
+            .text {
+                text-align: center;
+            }
+        }
+    }
+}

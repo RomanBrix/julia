@@ -1,0 +1,77 @@
+.consult {
+    background: $tc;
+    box-sizing: border-box;
+    padding: 75px 0;
+    .content {
+        color: #fff;
+        position: relative;
+
+        .img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-25%);
+            right: 0;
+            width: 400px;
+            height: 270px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 30%;
+            }
+            background-size: cover;
+        }
+
+        h1 {
+            width: 100%;
+            position: relative;
+            box-sizing: border-box;
+            padding-bottom: 15px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                background: $mc;
+                width: 100%;
+                top: 100%;
+                left: 0;
+            }
+        }
+
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            input {
+                border: 1px solid #ffffff;
+                transition: 0.25s;
+                user-select: none;
+                outline: none;
+                padding: 15px 20px;
+                background: rgba(255, 255, 255, 0.05);
+                margin-right: 35px;
+                font-size: 18px;
+                box-sizing: border-box;
+                color: #fff;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.15);
+                }
+                &:focus {
+                    border-color: $mc;
+                }
+            }
+
+            .send {
+                padding: 15px 40px;
+                color: #fff;
+                background: rgba(87, 87, 86, 0.5);
+                &:hover {
+                    // background: lighten($color: #000000, $amount: 0)
+                    background: rgba(87, 87, 86, 0.8);
+                }
+            }
+        }
+    }
+}

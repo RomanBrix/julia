@@ -1,0 +1,69 @@
+$mc: #ffb801 !default;
+$tc: #1e1e1e !default;
+
+@import "./fonts/index.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+    margin: 0;
+    padding: 0;
+    body {
+        margin: 0;
+        padding: 0;
+        #root {
+            .App {
+                .content {
+                    max-width: 1440px;
+                    min-width: 1440px;
+                    // background: coral;
+                    margin: 0 auto;
+                    color: $tc;
+                    font-size: 18px;
+                    font-family: "Inter", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 1.5;
+
+                    h1,
+                    h2,
+                    h3 {
+                        font-family: "Inter", sans-serif;
+                        font-weight: 700;
+                        font-style: normal;
+                    }
+
+                    button {
+                        background: $mc;
+                        color: $tc;
+                        border: none;
+                        padding: 17px 40px;
+                        border-radius: 2px;
+                        font-size: 18px;
+                        cursor: pointer;
+                        text-align: center;
+                        transition: 0.25s;
+                        user-select: none;
+                        &:hover {
+                            background: darken($mc, 10%);
+                            color: #fff;
+                        }
+                        &.secondary {
+                            background: $tc;
+                            color: #fff;
+                            &:hover {
+                                background: lighten($tc, 10%);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                @import "./intro.scss";
+                @import "./about.scss";
+                @import "./services.scss";
+                @import "./consult.scss";
+                @import "./etaps.scss";
+                @import "./deals.scss";
+            }
+        }
+    }
+}
