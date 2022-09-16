@@ -1,0 +1,50 @@
+.etaps {
+    .content {
+        flex-wrap: wrap;
+        // flex-direction: column-reverse;
+        h1 {
+            width: 100%;
+            order: 1;
+        }
+        .left {
+            order: 3;
+            .block {
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-start;
+                margin-bottom: 35px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .number {
+                    width: 70px;
+                    height: 70px;
+                    background: $mc;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 30px;
+                    font-size: 32px;
+                    color: #fff;
+                }
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    .head {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    .info {
+                        margin-top: auto;
+                    }
+                }
+            }
+        }
+        .right {
+            order: 2;
+        }
+    }
+}

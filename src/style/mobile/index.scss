@@ -1,0 +1,8 @@
+//for tablet screen rule
+@media screen and (max-width: 768px) {
+    @import "./intro.scss";
+    @import "./about.scss";
+    @import "./consult.scss";
+    @import "./deals.scss";
+    @import "./contacts.scss";
+}

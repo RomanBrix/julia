@@ -1,0 +1,52 @@
+.about {
+    // position: relative;
+    .content {
+        flex-wrap: wrap;
+        .line {
+            top: 0;
+            background-attachment: fixed;
+            transform: scaleX(-1) scaleY(-1);
+            * {
+            }
+            svg {
+                path {
+                }
+            }
+            &.drawLine {
+                path {
+                }
+            }
+        }
+        .left {
+            width: 100%;
+
+            h1 {
+            }
+            p {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .right {
+            width: 100%;
+
+            img {
+            }
+        }
+    }
+}
+
+.about-plus {
+    .content {
+        flex-wrap: wrap;
+        .block {
+            &:after {
+            }
+            .head {
+            }
+            .text {
+            }
+        }
+    }
+}

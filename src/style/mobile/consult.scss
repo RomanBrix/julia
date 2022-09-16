@@ -1,0 +1,40 @@
+.consult {
+    overflow: hidden;
+
+    .content {
+        .img {
+            display: none;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+            right: -50%;
+            top: 50%;
+            filter: blur(2px);
+        }
+
+        h1 {
+            position: relative;
+            z-index: 2;
+        }
+
+        .form {
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+            input {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .send {
+                padding: 15px 40px;
+                color: #fff;
+                background: rgba(87, 87, 86, 0.5);
+                &:hover {
+                    // background: lighten($color: #000000, $amount: 0)
+                    background: rgba(87, 87, 86, 0.8);
+                }
+            }
+        }
+    }
+}

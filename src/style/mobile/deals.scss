@@ -1,0 +1,32 @@
+.deals {
+    .content {
+        .blocks {
+            flex-wrap: wrap;
+            .block {
+                min-width: 100%;
+
+                .top,
+                .bottom {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                .bottom {
+                    margin-top: auto;
+                    margin-bottom: 0;
+                }
+                .head {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                }
+                .text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    // max-width: 250px;
+                }
+            }
+        }
+    }
+}

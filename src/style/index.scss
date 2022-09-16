@@ -14,6 +14,13 @@ html {
                 .content {
                     max-width: 1440px;
                     min-width: 1440px;
+
+                    @media screen and (max-width: 768px) {
+                        min-width: 100%;
+                        max-width: 100%;
+                        box-sizing: border-box;
+                        padding: 25px;
+                    }
                     // background: coral;
                     margin: 0 auto;
                     color: $tc;
@@ -63,6 +70,10 @@ html {
                 @import "./consult.scss";
                 @import "./etaps.scss";
                 @import "./deals.scss";
+                @import "./contacts.scss";
+                @import "./map.scss";
+
+                @import "./mobile/index.scss";
             }
         }
     }

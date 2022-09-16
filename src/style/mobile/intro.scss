@@ -1,0 +1,53 @@
+.intro {
+    .content {
+        .bottom {
+            // display: none;
+            flex-wrap: wrap;
+            position: relative;
+            .block {
+                // max-width: 45%;
+                // margin-right: 10px;
+                // margin-bottom: 15px;
+                position: absolute;
+                left: 10px;
+                bottom: 20px;
+                // opacity: 0;
+                color: transparent;
+                transition: 0.25s;
+                &::before {
+                    transition: left 0.25s, opacity 0.25s 0.25s;
+                    left: 100%;
+                    opacity: 0;
+                }
+                &.active-show {
+                    // opacity: 1;
+                    color: #fff;
+                    &::before {
+                        left: -10px;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .center {
+            position: relative;
+            z-index: 2;
+            h1 {
+                font-size: 2em;
+            }
+        }
+        .top {
+            position: relative;
+            z-index: 2;
+        }
+        .bgImg {
+            // display: none;
+            overflow: hidden;
+            img {
+                object-fit: cover;
+                filter: blur(2px);
+                opacity: 0.8;
+            }
+        }
+    }
+}

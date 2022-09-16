@@ -1,0 +1,95 @@
+.contacts {
+    .content {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+
+        .left {
+            max-width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            h1 {
+                width: 100%;
+            }
+            .contact {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                align-self: center;
+                .block {
+                    width: 45%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-bottom: 30px;
+                    .img {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 15px;
+                    }
+                    .text {
+                        a {
+                            text-transform: none;
+                            text-decoration: none;
+                            color: inherit;
+                            transition: 0.25s;
+                            &:hover {
+                                color: $mc;
+                            }
+                        }
+
+                        .top {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            max-width: 45%;
+            h1 {
+                margin-bottom: 0;
+            }
+            p {
+                margin: 35px 0;
+            }
+            .form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: stretch;
+                font-size: 18px;
+                input {
+                    box-sizing: border-box;
+
+                    width: 100%;
+                    border: 2px solid $tc;
+                    border-top-color: transparent;
+                    border-left-color: transparent;
+                    border-right-color: transparent;
+                    // transition: 0.25s;
+                    user-select: none;
+                    outline: none;
+                    margin-bottom: 25px;
+                    padding: 10px 10px;
+                    transition: border-bottom-color 0.25s,
+                        border-left-color 0.25s linear 0.25s,
+                        border-top-color 0.25s linear 0.5s,
+                        border-right-color 0.25s linear 0.75s;
+                    &:hover {
+                        border-bottom-color: rgba($color: $mc, $alpha: 0.3);
+                    }
+                    &:focus,
+                    &:active {
+                        border-color: $mc;
+                    }
+                }
+            }
+        }
+    }
+}
