@@ -2,9 +2,11 @@
     // position: relative;
     .content {
         display: flex;
-        align-items: justify;
+        align-items: flex-start;
         justify-content: space-between;
         position: relative;
+        box-sizing: border-box;
+        padding: 35px 25px;
         .line {
             position: absolute;
             width: 100%;
@@ -42,6 +44,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            align-self: center;
+            transition: 0.25s;
 
             h1 {
                 margin: 0;
@@ -49,11 +53,30 @@
             p {
                 max-width: 75%;
                 margin: 35px 0;
+                transition: 0.25s;
+            }
+
+            .text {
+                max-height: 315px;
+                overflow: hidden;
+                transition: 0.25s;
+                p:first-child {
+                    margin-bottom: 100px;
+                }
+            }
+            .open-text {
+                transition: 0.25s;
+                max-height: 5000px;
+                overflow: visible;
+                p:first-child {
+                    margin-bottom: 35px;
+                }
             }
         }
 
         .right {
-            position: relative;
+            position: sticky;
+            top: 35px;
             z-index: 1;
             box-sizing: border-box;
             padding: 25px;

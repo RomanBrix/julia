@@ -26,7 +26,7 @@ export default function Intro(){
                             Адвокат
                         </div>
                         <div className="right">
-                        Балюк Юлія Олексійвна
+                        Балюк Юлія Олексіївна
                         </div>
                     </div>
                 </div>
