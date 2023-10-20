@@ -1,6 +1,7 @@
 $mc: #ffb801 !default;
 $tc: #1e1e1e !default;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 @import "./fonts/index.scss";
 // @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
@@ -74,7 +75,10 @@ html {
                 @import "./map.scss";
                 @import "./docs.scss";
                 @import "./videos.scss";
-
+                @import "./newsContainer.scss";
+                @import "./pages/AllNews.scss";
+                @import "./pages/EnterPage.scss";
+                @import "./pages/admin/index.scss";
                 @import "./mobile/index.scss";
             }
         }

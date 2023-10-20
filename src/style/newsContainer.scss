@@ -1,0 +1,103 @@
+.main-news-container {
+    display: flex;
+    width: 100%;
+    background: #1e1e1e;
+    height: 146px;
+    color: #fff;
+
+    .news {
+        min-width: 0;
+        flex: 1 0 0;
+        box-sizing: border-box;
+        padding: 24px;
+        height: 100%;
+        // background: red;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: #ffb801;
+        }
+        &:first-child {
+            &::after {
+                display: none;
+            }
+        }
+        .date {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 17px;
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            line-height: 14px;
+            font-size: 12px;
+
+            span {
+                font-size: 10px;
+                margin-right: 16px;
+                color: #ffb801;
+            }
+        }
+        .title {
+            font-family: "Inter";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            margin-bottom: 10px;
+            max-width: 270px;
+        }
+        .btn {
+            color: #ffb801;
+
+            font-family: "Roboto";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            cursor: pointer;
+            transition: 0.25s;
+
+            &:hover {
+                opacity: 0.6;
+            }
+            svg {
+                margin-left: 8px;
+            }
+        }
+    }
+    .all-news {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 480px;
+        padding: 0;
+
+        .btn {
+            text-align: center;
+            font-family: "Inter";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 60px; /* 333.333% */
+            text-transform: uppercase;
+            width: 100%;
+            height: 100px;
+            // background: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                margin-left: 7px;
+            }
+        }
+    }
+}

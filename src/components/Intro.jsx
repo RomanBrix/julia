@@ -1,6 +1,6 @@
 // import IntroImg from '../images/intro.jpg';
 import IntroBgImg from "../images/kek2.png";
-import Madam from "../images/kek1.png";
+// import Madam from "../images/kek1.png";
 import { useEffect } from "react";
 
 export default function Intro() {
@@ -20,20 +20,22 @@ export default function Intro() {
         >
             <div className="content">
                 <div className="bgImg">
-                    <img src={Madam} alt="" />
+                    {/* <img src={Madam} alt="" /> */}
+                    <img src={"/kek1.png"} alt="" />
                 </div>
                 <div className="top">
                     <div className="block">
-                        <div className="left">Адвокат</div>
-                        <div className="right">Балюк Юлія Олексіївна</div>
+                        {/* <div className="left">Адвокат</div>
+                        <div className="right">Балюк Юлія Олексіївна</div> */}
+                        <img src="/sec_logo.svg" alt="" />
                     </div>
                 </div>
 
                 <div className="center">
-                    <h1>Ваші проблеми мають рішення</h1>
+                    <h1>Балюк юлія олексіївна</h1>
                     <p>
-                        Професійні юридичні послуги для фізичних та юридичних
-                        осіб
+                        Голова Комітету Національної асоціації адвокатів України
+                        з питань регуляторної політики
                     </p>
                     <button
                         onClick={() => {

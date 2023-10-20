@@ -1,0 +1,88 @@
+.enter-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba($color: #181819, $alpha: 1);
+    background-image: linear-gradient(
+        to right bottom,
+        #ffb801,
+        #ff9757,
+        #ff8595,
+        #ff89ca,
+        #d399e9,
+        #ab92da,
+        #888ac6,
+        #6d7fad,
+        #596384,
+        #43485d,
+        #2e2f39,
+        #181819
+    );
+    .enter-container {
+        border-radius: 8px;
+        background: #fff;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-width: 300px;
+        box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
+
+        padding: 25px;
+        h1 {
+            text-align: center;
+            width: 100%;
+            font-weight: 18px;
+            margin: 0;
+            color: rgba(34, 34, 34, 0.9);
+            margin-bottom: 15px;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(34, 34, 34, 0.25);
+            border-radius: 6px;
+            box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.09);
+
+            font-size: 14px;
+            transition: 0.25s;
+            outline: none;
+            &:active,
+            &:focus {
+                border-color: rgba(255, 184, 1, 0.9);
+                box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.15);
+            }
+        }
+        button {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            // padding: ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 10px 10px 14px 1px rgba(00, 00, 00, 0.2);
+            letter-spacing: 0.094em;
+            height: 35px;
+            cursor: pointer;
+            outline: none;
+            transition: 0.25s;
+            border: none;
+            margin-top: 10px;
+            border-radius: 8px;
+            background-color: rgb(255, 184, 1);
+            color: rgb(34, 34, 34);
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            &:hover {
+                background-color: rgba(255, 184, 1, 0.7);
+            }
+        }
+    }
+}
