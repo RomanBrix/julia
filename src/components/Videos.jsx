@@ -4,7 +4,7 @@ export default function Videos() {
             <div className="content">
                 <div className="big-video">
                     <div className="bg">
-                        <img src="/videos/1.jpg" alt="videos" />
+                        <img src="/videos/1.png" alt="videos" />
                     </div>
                     <div className="text">
                         <h1>Відеоматеріали</h1>
@@ -58,7 +58,7 @@ export default function Videos() {
             return (
                 <div className="mini-video" key={index}>
                     <div className="img">
-                        <img src={`/videos/${index + 2}.jpg`} alt="videos" />
+                        <img src={`/videos/${index + 2}.png`} alt="videos" />
                     </div>
                     <div className="text">
                         <div className="head">{item.head}</div>

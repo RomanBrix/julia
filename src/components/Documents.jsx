@@ -88,7 +88,7 @@ export default function Documents() {
         let arr = [];
         for (let i = 1; i <= 19; i++) {
             if (i <= 12) {
-                arr.push(<img key={i} src={`/documents/${i}.jpg`} alt="" />);
+                arr.push(<img key={i} src={`/documents/${i}.png`} alt="" />);
             } else {
                 arr.push(<img key={i} src={`/documents/${i}.png`} alt="" />);
             }
